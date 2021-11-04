@@ -14,7 +14,7 @@ return<Col xs={12}sm={12} md={6} lg={6} xl={3}>  <div className=" flex item-cent
 flex-flow: column wrap;" >
  
   
-    <Image src={card.img}rounded layout="fill" className="rounded-lg "style={{width:'100px'}}/>
+    <Image src={card.img}rounded layout="fill" className="rounded-lg"style={{width:'100px',borderRadius:'20px'}}/>
   
          {/*Right*/}
          <div style={{float:'right', marginTop:'20px'}}>
