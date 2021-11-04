@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { BiSearchAlt2 } from "react-icons/bi";
+
 
 class Cover extends Component {
     render() {
