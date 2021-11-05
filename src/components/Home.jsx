@@ -16,7 +16,7 @@ function Home(){
                 <CardComponent/>
                 </div>
                 <h2 className = "pb-1 " style={{marginLeft:'8rem',fontWeight:'bold',marginTop:'8rem'}}>Live anywhere</h2>
-                <div clasName="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div clasName="grid grid-cols-12 sm:grid-cols-12 lg:grid-cols-3 xl:grid-cols-4">
               <MediumCard/>
                 </div>
                 </section>

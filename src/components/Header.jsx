@@ -7,6 +7,8 @@ import { AiOutlinePlus,AiOutlineMinus } from "react-icons/ai";
 import { FcPlus} from "react-icons/fc";
 import { BsPeopleFill ,BsPatchMinusFill} from "react-icons/bs";
 import {Navbar} from 'react-bootstrap'
+import {RiDeleteBin6Fill} from "react-icons/ri";
+import { Link, withRouter} from 'react-router-dom'
 
 function Header() {
 
@@ -28,7 +30,9 @@ function Header() {
         key:'selection',
     }
    
-
+const deleteInput =()=>{
+    setSearch("")
+}
     return( 
       
       <container>
@@ -56,11 +60,13 @@ onChange={handleSelect}
     </Navbar.Text>
   </Navbar.Collapse>
 </Navbar>
-
-
-           </div>
-        ) }
-        </container>
+<div style={{display:'flex'}}>
+<h5  onClick={deleteInput} style={{fontWeight:'900'}}>Cancel</h5>
+<Link to="/Main2">continue</Link>
+</div>
+</div>
+) }
+ </container>
        
             
         

@@ -1,17 +1,31 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import React from 'react'
 import Home from './components/Home'
-import Header from './components/Header'
+import Main2 from './components/Main2'
+import './App.css';
+import { BrowserRouter , Routes, Route,Link,Switch} from 'react-router-dom'
 
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      <Home/>
-      </header>
-    </div>
-  );
+const  App = () => {
+  return(
+    <div>
+  
+    <BrowserRouter>
+    <Home/>
+    
+      <Routes>
+      <Route path="./Main2" exact Component={Main2}/>
+    
+      </Routes>
+      </BrowserRouter>  
+      </div>  
+      );
+  
 }
+ 
+
+
+
+
+
 
 export default App;
