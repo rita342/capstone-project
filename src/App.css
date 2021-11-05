@@ -1,4 +1,37 @@
 
+#tree {
+   position:absolute;
+   top:70px;
+   left:50px;
+   color:white;
+   font-family: Lucida Handwriting,	Brush Script MT,Cursive;
+  
+   
+  }
+ 
+input[type="checkbox"]{
+    display:none;
+
+
+}
+   #box {
+    position:relative;
+   
+   }
+   #input {
+    width:500px;
+    border-radius: 40%;
+    border:1px solid green;
+
+   }
+   #box label{
+    position:absolute;
+   margin-left:-80px;
+   border-radius: 50%;
+   color:rgb(74, 119, 6);
+   margin-top: 5px;
+ 
+   }
 
 .nav-link,
 .current {

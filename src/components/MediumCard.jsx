@@ -42,7 +42,7 @@ import {Col,Container,Row} from 'react-bootstrap'
   
   <Row>
     <Col xs={12} md={12} lg={12}><img src={img4} layout="fill" objectFit="cover"  style={{width:'100%',borderRadius:'10px',height:'400px',marginTop:'5rem',marginBottom:'5rem'}}/> 
-    <h2 style={{marginTop:'-40%'}}>dfff</h2>
+    <h2 id=" big-card"style={{marginTop:'-40%'}}></h2>
      </Col>
     
   </Row>

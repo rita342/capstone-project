@@ -6,9 +6,11 @@ import { useState } from 'react'
 import { AiOutlinePlus,AiOutlineMinus } from "react-icons/ai";
 import { FcPlus} from "react-icons/fc";
 import { BsPeopleFill ,BsPatchMinusFill} from "react-icons/bs";
-import {Navbar} from 'react-bootstrap'
+import {Navbar,Col,Row,Container} from 'react-bootstrap'
 import {RiDeleteBin6Fill} from "react-icons/ri";
 import { Link, withRouter} from 'react-router-dom'
+import {SiAirbnb } from "react-icons/si";
+import { BiSearch } from "react-icons/bi";
 
 function Header() {
 
@@ -35,12 +37,20 @@ const deleteInput =()=>{
 }
     return( 
       
-      <container>
-        <div className="container" id="header" style={{textAlign:'center',margin:'10px'}}>
-    <input  value ={search} onChange ={(e) => setSearch(e.target.value)} type = "text" placeholder="start search ypur place"  />
-  
-   
-        </div>
+     <div>
+<Container style={{marginTop:'30px',marginBottom:'20px'}}>
+ 
+  <Row>
+    <Col><SiAirbnb style={{marginLeft:'10px',fontSize:'40px',color:'green'}}/>AirBnb</Col>
+    <Col id="box"> <input  value ={search} onChange ={(e) => setSearch(e.target.value)} type = "text" placeholder="start search ypur place"  id="input"/>
+    <label id="check"><BiSearch/></label>
+    </Col>
+    <Col>3 of 3</Col>
+  </Row>
+</Container>
+
+      
+      
        {search && (  
        <div>
 <DateRangePicker
@@ -66,7 +76,7 @@ onChange={handleSelect}
 </div>
 </div>
 ) }
- </container>
+ </div>
        
             
         
